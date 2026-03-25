@@ -2,14 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Run C++ File",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\output\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "preLaunchTask": "build cpp"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/sahar/Desktop/DSA_with_CPP/Day-1",
-      "program": "c:/Users/sahar/Desktop/DSA_with_CPP/Day-1/build/Debug/outDebug",
+      "cwd": "c:/Users/sahar/Desktop/DSA_with_CPP/Day-3",
+      "program": "c:/Users/sahar/Desktop/DSA_with_CPP/Day-3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
