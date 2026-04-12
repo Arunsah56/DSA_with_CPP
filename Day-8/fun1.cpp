@@ -31,7 +31,18 @@ int multiply(int num1, int num2)
 {
     return num1 * num2;
 }
-
+// Function to increment a number by reference
+void increment(int &num)
+{
+    num++;
+}
+// Function to swap two numbers by reference
+void swap(int &a, int &b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
 
 int main()
 {
@@ -56,6 +67,11 @@ int main()
         cout<<num2<<" is not a prime number."<<endl;
     cout<<"Factorial of "<<num1<<" is "<<factorial(num1)<<endl; 
     cout<<"Factorial of "<<num2<<" is "<<factorial(num2)<<endl;
-    
+    increment(num1);
+    cout<<"After incrementing, first number is "<<num1<<endl;
+    swap(num1, num2);
+    cout<<"After swapping, first number is "<<num1<<" and second number is "<<num2<<endl;
+    return 0;
+
 
 }
